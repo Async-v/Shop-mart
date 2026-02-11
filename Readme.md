@@ -81,6 +81,30 @@ ShopMart/
 │      ├── public/
 │      │ 
 │      ├── src/
+│      │    ├── 📁api(services)/
+│      │    │          └── AxiosConfig.jsx 
+│      │    │
+│      │    ├── 📁components/
+│      │    │          └── Nav.jsx 
+│      │    │
+│      │    ├── 📁pages/
+│      │    │        ├── 📁admin/
+│      │    │        │       ├── CreateProduct.jsx
+│      │    │        │       └── UpdateProduct.jsx
+│      │    │        │       
+│      │    │        ├── 📁user/
+│      │    │        │       └── UserProfile.jsx
+│      │    │        │       
+│      │    │        ├── Home.jsx
+│      │    │        ├── Products.jsx
+│      │    │        ├── Cart.jsx
+│      │    │        ├── About.jsx
+│      │    │        ├── Login.jsx
+│      │    │        ├── Register.jsx
+│      │    │        └── PageNotFound.jsx
+│      │    │
+│      │    ├── 📁routes/
+│      │    │        └── Mainroutes.jsx
 │      │    ├── App.jsx
 │      │    └── main.jsx
 │      │
@@ -100,6 +124,7 @@ ShopMart/
 * Json Server
 * React Hook Form
 * React Toastify
+* Axios
 * React Router DOM
 * Tailwind CSS
 
