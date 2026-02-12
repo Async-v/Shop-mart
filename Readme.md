@@ -31,18 +31,16 @@ npm run dev
 
 After setup, clean the default boilerplate:
 
-* Remove unused files like:
+- Remove unused files like:
+  - `App.css`
 
-  * `App.css`
+  - `logo.svg`
 
-  * `logo.svg`
+- Clear default JSX from `App.jsx`
 
-* Clear default JSX from `App.jsx`
+- Remove unused imports
 
-* Remove unused imports
-
-* Set up a clean project structure
-
+- Set up a clean project structure
 
 ### ✅ Step 3: Setup Backend (JSON Server – Temporary API)
 
@@ -54,6 +52,7 @@ mkdir backend
 cd backend
 npm install json-server
 ```
+
 Create a `db.json` file inside the backend folder.
 
 You can refer to the JSON Server documentation for boilerplate data structure.
@@ -72,46 +71,77 @@ http://localhost:5000
 
 ### ✅ Step 4: Axios Configuration
 
-* Created centralized Axios instance
-* Set baseURL for API
+- Created centralized Axios instance
+- Set baseURL for API
 
 ### ✅ Step 5: Setup Basic Backend Data
 
-* Created db.json file
-* Added initial collections:
-  * users
-  * products
-  * cart
-* Added sample product data for testing
+- Created db.json file
+- Added initial collections:
+  - users
+  - products
+  - cart
+- Added sample product data for testing
+
+### ✅ Step 6: Navbar
+
+- Created responsive navbar using React + Tailwind
+- Added navigation links and mobile menu
+- Integrated icons (Lucide React)
+
+### ✅ Step 7: Home Page
+
+- Designed hero section
+- Added features section
+- Implemented responsive layout
+
+### ✅ Step 8: Products Page
+
+- Created product grid UI
+- Added search bar and category filters (UI only)
+
+### ✅ Step 9: Login Page
+
+- Built login form using React Hook Form (`useForm`)
+- Managed form validation and data handling
+- Implemented show/hide password feature
+- Styled with Tailwind CSS
+
+### ✅ Step 10: Register Page
+
+- Created registration form using React Hook Form (`useForm`)
+- Generated unique user IDs using `nanoid`
+- Collected username, email, password, and image
+- Applied validation and responsive UI design
 
 ---
 
 ## 📁 Folder Structure
+
 ```bash
 ShopMart/
-│ 
-├── frontend/ 
+│
+├── frontend/
 │      ├── public/
-│      │ 
+│      │
 │      ├── src/
 │      │    ├── 📁api(services)/
-│      │    │          └── AxiosConfig.jsx 
+│      │    │          └── AxiosConfig.jsx
 │      │    │
 │      │    ├── 📁components/
-│      │    │          └── Nav.jsx 
+│      │    │          └── Nav.jsx
 │      │    │
 │      │    ├── 📁pages/
 │      │    │        ├── 📁admin/
 │      │    │        │       ├── CreateProduct.jsx
 │      │    │        │       └── UpdateProduct.jsx
-│      │    │        │       
+│      │    │        │
 │      │    │        ├── 📁user/
 │      │    │        │       └── UserProfile.jsx
-│      │    │        │       
+│      │    │        │
 │      │    │        ├── Home.jsx
 │      │    │        ├── Products.jsx
 │      │    │        ├── Cart.jsx
-│      │    │        ├── About.jsx
 │      │    │        ├── Login.jsx
 │      │    │        ├── Register.jsx
 │      │    │        └── PageNotFound.jsx
@@ -122,28 +152,31 @@ ShopMart/
 │      │    └── main.jsx
 │      │
 │      └── package.json
-│ 
+│
 ├── backend/
 │      ├── db.json
 │      └── package.json
-│     
+│
 └── README.md
 ```
+
 ---
 
 ## 🛠️ Tech Stack
-* React.js
-* JavaScript (ES6+)
-* Json Server
-* React Hook Form
-* React Toastify
-* Axios
-* React Router DOM
-* Tailwind CSS
+
+- React.js
+- JavaScript (ES6+)
+- Json Server
+- React Hook Form
+- React Toastify
+- Nanoid
+- Lucide React
+- Axios
+- React Router DOM
+- Tailwind CSS
 
 ---
 
 ## 🎯 Project Purpose
 
 This project is built for practice:
-
