@@ -43,7 +43,6 @@ After setup, clean the default boilerplate:
 
 * Set up a clean project structure
 
---- 
 
 ### ✅ Step 3: Setup Backend (JSON Server – Temporary API)
 
@@ -70,6 +69,20 @@ Now your backend API will run at:
 ```bash
 http://localhost:5000
 ```
+
+### ✅ Step 4: Axios Configuration
+
+* Created centralized Axios instance
+* Set baseURL for API
+
+### ✅ Step 5: Setup Basic Backend Data
+
+* Created db.json file
+* Added initial collections:
+  * users
+  * products
+  * cart
+* Added sample product data for testing
 
 ---
 
