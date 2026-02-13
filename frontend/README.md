@@ -44,6 +44,7 @@ http://localhost:5173
 - Created components folder
 - Created pages folder (admin & user)
 - Created routes folder
+- Created store folder
 
 ✅ 3. Axios Setup
 - Created centralized Axios instance
@@ -58,10 +59,39 @@ http://localhost:5173
 - Cart Page
 - Admin Pages
 
+### 🗂️ Redux Setup
+
+📁 Redux Folder Structure
+```
+📁src/
+│        
+├── 📁store/
+│       ├── 📁actions/
+│       │        ├── CartActions.jsx
+│       │        ├── ProductActions.jsx
+│       │        └── UserActions.jsx
+│       │
+│       ├── 📁reducers(Features)
+│       │        ├── CartSlice.jsx
+│       │        ├── ProductSlice.jsx
+│       │        └── UserSlice.jsx
+│       │
+│       └── Store.jsx
+```
+✅ Configured:
+
+- Created store using `configureStore`
+- Created slices using `createSlice`
+- Wrapped app with `<Provider>`
+- Used `useDispatch`
+- Used `useSelector`
+
 ## 📦 Libraries Used
 
 - React Hook Form
 - React Toastify
+- Redux Toolkit
+- React Redux
 - Nanoid
 - Lucide React
 - Axios

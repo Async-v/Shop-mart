@@ -46,7 +46,21 @@ ShopMart/
 │      │    │        └── PageNotFound.jsx
 │      │    │
 │      │    ├── 📁routes/
-│      │    │        └── Mainroutes.jsx
+│      │    │        └── Mainroutes.jsx  
+│      │    │        
+│      │    ├── 📁store/
+│      │    │        ├── 📁actions/
+│      │    │        │        ├── CartActions.jsx
+│      │    │        │        ├── ProductActions.jsx
+│      │    │        │        └── UserActions.jsx
+│      │    │        │   
+│      │    │        ├── 📁reducers(Features)
+│      │    │        │        ├── CartSlice.jsx
+│      │    │        │        ├── ProductSlice.jsx
+│      │    │        │        └── UserSlice.jsx
+│      │    │        │
+│      │    │        └── Store.jsx
+│      │    │        
 │      │    ├── App.jsx
 │      │    └── main.jsx
 │      │
@@ -68,6 +82,8 @@ ShopMart/
 - React.js
 - Tailwind CSS
 - Axios
+- Redux Toolkit
+- React Redux
 - React Router DOM
 - React Hook Form
 - Nanoid
