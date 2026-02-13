@@ -1,15 +1,22 @@
 {
   "users": [
     {
-      "id": "dnDfnDkenkfHf",
-      "image": "https://plus.unsplash.com/premium_vector-1722878342001-9dc651ee555f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": "PwkTMpJ_laqr-aRw5xYE3",
+      "image": "https://images.unsplash.com/photo-1750816204148-5d02aff367cb?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "username": "admin",
       "email": "admin@admin.com",
       "password": "123456",
       "isAdmin": true
+    },
+    {
+      "id": "ySHuBNVaiw-6vqeQjETsV",
+      "image": "https://images.unsplash.com/photo-1666001120694-3ebe8fd207be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "username": "hello",
+      "email": "hello@world.com",
+      "password": "1234",
+      "isAdmin": false
     }
   ],
-
   "products": [
     {
       "id": "dowHdwjmNdenJc",
@@ -20,6 +27,5 @@
       "category": "men's clothing"
     }
   ],
-
-  "cart" : []
+  "cart": []
 }

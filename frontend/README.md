@@ -86,6 +86,17 @@ http://localhost:5173
 - Used `useDispatch`
 - Used `useSelector`
 
+### 🔐 Authentication State Management
+
+Authentication is managed globally using Redux Toolkit.
+
+✅ Implemented Actions
+
+- `asyncRegisterUser` → store data in backend
+- `asyncLoginUser` → store in localStorage
+- `asyncLogoutUser` → logout from localStorage
+- `asyncCurrentUser` → get from localStorage
+
 ## 📦 Libraries Used
 
 - React Hook Form

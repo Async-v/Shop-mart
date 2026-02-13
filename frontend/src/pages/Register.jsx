@@ -1,12 +1,15 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { nanoid } from 'nanoid';
+import { useDispatch } from 'react-redux';
+import { asyncRegisterUser } from "../store/actions/UserActions";
 
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
-
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     const {
         register,
         handleSubmit,
@@ -17,9 +20,9 @@ const Register = () => {
     const registerHandler = (user) => {
         user.id = nanoid();
         user.isAdmin = false;
-        console.log(user);
-
+        dispatch(asyncRegisterUser(user));
         reset();
+        navigate("/login");
     }
 
     return (
