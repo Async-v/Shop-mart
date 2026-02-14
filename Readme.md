@@ -28,12 +28,13 @@ ShopMart/
 │      │    │          └── AxiosConfig.jsx
 │      │    │
 │      │    ├── 📁components/
-│      │    │          └── Nav.jsx
+│      │    │          ├── Nav.jsx
+│      │    │          └── ProductCard.jsx
 │      │    │
 │      │    ├── 📁pages/
 │      │    │        ├── 📁admin/
 │      │    │        │       ├── CreateProduct.jsx
-│      │    │        │       └── UpdateProduct.jsx
+│      │    │        │       └── ProductDetails.jsx
 │      │    │        │
 │      │    │        ├── 📁user/
 │      │    │        │       └── UserProfile.jsx

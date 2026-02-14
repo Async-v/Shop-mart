@@ -97,6 +97,10 @@ Authentication is managed globally using Redux Toolkit.
 - `asyncLogoutUser` → logout from localStorage
 - `asyncCurrentUser` → get from localStorage
 
+✅ 7. Implemented Product CURD operations
+- Create a component: `ProductDetails`
+- Baki step `Product CURD` operation kiye hai
+
 ## 📦 Libraries Used
 
 - React Hook Form

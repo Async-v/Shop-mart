@@ -1,6 +1,14 @@
 import { ShoppingCart } from "lucide-react";
+import { useSelector } from "react-redux";
+import ProductCard from "../components/ProductCard";
 
 const Products = () => {
+
+    const products = useSelector(state => state.productReducer.products);
+
+    const renderProductCard = products.map((product) => {
+        return <ProductCard key={product.id} product={product} />
+    })
 
     return (
         <div className="bg-gray-50 min-h-screen">
@@ -45,33 +53,14 @@ const Products = () => {
 
                 {/* Product Grid */}
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <div
-                        className="bg-white shadow hover:shadow-lg transition duration-300 overflow-hidden group"
-                    >
-                        {/* Product Image */}
-                        <div className="h-56 bg-gray-100 flex items-center justify-center">
-                            <img
-                                className="h-40 object-cover group-hover:scale-105 transition duration-300"
-                                src="https://static.zara.net/assets/public/e162/5536/14094b80a1e7/a78a660660c7/07545515800-f1/07545515800-f1.jpg?ts=1769013969209&w=312"
-                            />
-                        </div>
-
-                        {/* Product Info */}
-                        <div className="p-5">
-                            <h3 className="font-semibold text-lg text-gray-800 line-clamp-1">
-                                Relaxed Fit Flowing Shirt
-                            </h3>
-
-                            <p className="text-indigo-600 font-bold text-xl mt-2">
-                                ₹ 4,350.00
+                    {products.length > 0 ?
+                        <>{renderProductCard}</>
+                        : <>
+                            <p className="text-gray-600 text-lg font-semibold mt-2">
+                                Loading...
                             </p>
-
-                            <button className="mt-4 w-full flex items-center justify-center gap-2 bg-indigo-600 text-white py-2 hover:bg-indigo-700 transition">
-                                <ShoppingCart size={18} />
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
+                        </>
+                    }
                 </div>
             </div>
         </div>

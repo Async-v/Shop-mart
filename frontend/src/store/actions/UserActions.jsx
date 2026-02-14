@@ -21,9 +21,9 @@ export const asyncLoginUser = (user) => async (dispatch, getState) => {
     }
 };
 
-export const asyncLogoutUser = (user) => async (dispatch, getState) => {
+export const asyncLogoutUser = () => async (dispatch, getState) => {
     try {
-        localStorage.removeItem("user", JSON.stringify(data[0]));
+        localStorage.removeItem("user");
         console.log("User LogOut!!!")
     } catch (error) {
         console.log(error);
