@@ -101,6 +101,15 @@ Authentication is managed globally using Redux Toolkit.
 - Create a component: `ProductDetails`
 - Baki step `Product CURD` operation kiye hai
 
+✅ 8. Implemented User Profile page
+- User Profile Page Operation `updateUser, logoutUser, deleteUser`
+- Baki Chote Mote changes
+
+✅ 9. Implemented Auth based routes access
+- Add `AuthWrapper` and `UnauthWrapper`
+- Baki Chote Mote changes
+
+
 ## 📦 Libraries Used
 
 - React Hook Form

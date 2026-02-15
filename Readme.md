@@ -39,7 +39,6 @@ ShopMart/
 │      │    │        ├── 📁user/
 │      │    │        │       └── UserProfile.jsx
 │      │    │        │
-│      │    │        ├── Home.jsx
 │      │    │        ├── Products.jsx
 │      │    │        ├── Cart.jsx
 │      │    │        ├── Login.jsx
@@ -47,6 +46,8 @@ ShopMart/
 │      │    │        └── PageNotFound.jsx
 │      │    │
 │      │    ├── 📁routes/
+│      │    │        ├── AuthWrapper.jsx  
+│      │    │        ├── UnauthWrapper.jsx  
 │      │    │        └── Mainroutes.jsx  
 │      │    │        
 │      │    ├── 📁store/
