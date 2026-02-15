@@ -1,22 +1,14 @@
 import { useState } from "react";
-import { Menu, X, ShoppingCart } from "lucide-react";
-import { NavLink, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { asyncLogoutUser } from "../store/actions/UserActions";
+import { Menu, X } from "lucide-react";
+import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
     const user = useSelector(state => state.userReducer.users);
 
     const activeHandler = ({ isActive }) => {
         return isActive ? "text-indigo-600" : "hover:text-indigo-600 transition";
-    }
-
-    const logoutHandler = () => {
-        dispatch(asyncLogoutUser());
-        navigate("/login");
     }
 
     return (
@@ -32,23 +24,19 @@ const Navbar = () => {
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8 font-semibold items-center">
                         <NavLink to="/" className={activeHandler}>
-                            Home
-                        </NavLink>
-                        <NavLink to="/products" className={activeHandler}>
                             Products
                         </NavLink>
 
-                        {user ? 
+                        {user ?
                             <>
-                                <NavLink to="/admin/create-product" className={activeHandler}>
-                                    Create Product
+                                {user && user?.isAdmin &&
+                                    <NavLink to="/admin/create-product" className={activeHandler}>
+                                        Create Product
+                                    </NavLink> 
+                                }
+                                <NavLink to="/user-profile" className={activeHandler}>
+                                    Settings
                                 </NavLink>
-                                <button
-                                    onClick={logoutHandler}
-                                    className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition"
-                                >
-                                    LogOut
-                                </button>
                             </>
                             :
                             <>
@@ -60,7 +48,7 @@ const Navbar = () => {
                                 </NavLink>
                             </>
                         }
-                        
+
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -76,9 +64,6 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden bg-white shadow-md px-6 py-4 space-y-4">
                     <NavLink to="/" className="block">
-                        Home
-                    </NavLink>
-                    <NavLink to="/products" className="block">
                         Products
                     </NavLink>
                     <NavLink

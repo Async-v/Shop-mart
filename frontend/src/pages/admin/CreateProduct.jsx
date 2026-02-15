@@ -18,7 +18,7 @@ const CreateProduct = () => {
         product.price = Number(product.price);
 
         dispatch(asyncCreateProduct(product));
-        navigate("/products");
+        navigate("/");
     };
 
     return (
@@ -108,7 +108,6 @@ const CreateProduct = () => {
                     >
                         Create Product
                     </button>
-
                 </form>
             </div>
         </div>

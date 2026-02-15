@@ -18,7 +18,7 @@ const Login = () => {
 
     const loginHandler = (user) => {
         dispatch(asyncLoginUser(user));
-        navigate("/products");
+        navigate("/");
     }
 
 
