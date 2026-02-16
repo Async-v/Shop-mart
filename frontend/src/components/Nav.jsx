@@ -34,6 +34,9 @@ const Navbar = () => {
                                         Create Product
                                     </NavLink> 
                                 }
+                                <NavLink to="/cart" className={activeHandler}>
+                                    Cart
+                                </NavLink>
                                 <NavLink to="/user-profile" className={activeHandler}>
                                     Settings
                                 </NavLink>
